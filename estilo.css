@@ -1,0 +1,482 @@
+/* importar la fuente */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;400;600;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   /*modificando el titulo*/
+    font-family: 'Barlow';
+}
+html{
+    scroll-behavior: smooth;
+
+}
+body{
+    background-color: #dde1e9;
+}
+/* Seccion Menu*/
+.contenedor-header{
+    width: 100%;   /*Ancho del Area de la caja*/
+    position: fixed;
+    border-bottom: 1px solid #2f283e; /* Color del borde*/
+    background-color: rgba(0, 0, 0, 0.7); /*Color del fondo*/
+    z-index: 99; /*superposicion del objeto*/
+    padding: 0 20px; /*Espacio entre contenido y bordes*/
+}
+.contenedor-header header{
+    max-width: 1100px; /*ancho máximo de un elemento, para diferentes pantallas*/
+    margin: auto; /*espacios entre elementos*/
+    display: flex; /*Comportamiento de visualización*/
+    justify-content: space-between; /*Distribución de manera equitativa a lo largo del eje x*/
+    align-items: center; /*Distribución vertical - Centada*/
+    padding: 20px 0;
+    color: #ffffff;
+}
+.txtVerde{
+    color: #18f305 /*Cambiar palabra Revolution*/
+}
+.contenedor-header header nav a{
+    display: inline-block; /*Elementos en la misma Linea*/
+    text-decoration: none; /*Elimina la decoración del texto: subrayados"*/
+    color:#ffffff;
+    padding: 5px;
+    text-transform: uppercase; /*Transforma todo en Mayusculas*/
+}
+.contenedor-header header nav a:hover{ /*Color al pararse encima*/
+    color: #18f305;
+}
+.contenedor-header header .redes a{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    padding: 5px 8px;
+}
+.contenedor-header header .redes a:hover{/*color al pararse encima*/
+    color: #18f305;
+}
+.nav-responsive{
+    display: none;
+    font-size: 25px; /*Tamaño de la fuente*/
+}
+
+/* Sección Inicio */
+.inicio{
+    height: 100vh;
+    background:linear-gradient(rgba(0,1,3,0.5), rgba(0,0,0,.7)),url(img/e1.jpeg);
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    position: relative;
+}
+.inicio .contenido-seccion{
+    width: fit-content;
+    margin: auto;
+}
+.inicio .info{
+    width: fit-content;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.inicio .info h2{
+    font-size: 4rem;
+    letter-spacing: 3px;
+}
+.inicio .info p{
+    margin: 20px;
+    color: #797e8e;
+    font-size: 16px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+.inicio .info .btn-mas{
+    width: 50px;
+    margin: auto;
+    height: 50px;
+    border: 2px solid #18f305;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #18f305;
+    margin-top: 50px;
+    text-decoration: none;
+}
+.opciones{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.opciones .opcion{
+    border-top: 2px solid #797e8e;
+    padding: 7px;
+    color: #797e8e;
+    margin: 0 20px;
+}
+/* Seccion Objetivo */
+.objetivo{
+    max-width: 1100px;
+    margin: auto;
+    height: 100vh;
+    background-color: #ffffff;
+    padding: 100px 20px;
+}
+.objetivo .fila{
+    display: flex;
+    align-items: center;
+}
+.objetivo .fila .col{
+    width: 50%;
+}
+.objetivo .fila .col img{
+    width: 120%;
+    display: block;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.objetivo .fila .col .contenedor-titulo{
+    display: flex;
+    align-items: center;
+}
+.objetivo .fila .col .contenedor-titulo .numero{
+    color: #18f305;
+    font-weight: bold;
+    display: block;
+    font-size: 5rem;
+}
+.objetivo .fila .col .contenedor-titulo .info{
+    margin-left: 30px;
+}
+.objetivo .fila .col .contenedor-titulo .info .frase{
+    color: #18f305;
+}
+.objetivo .fila .col .contenedor-titulo .info h2{
+    font-size: 3rem;
+}
+.objetivo .fila .col p{
+    margin-bottom: 10px;
+    line-height: 28px;
+}
+.objetivo .fila .col .p-especial{
+    font-weight: bold;
+}
+.objetivo hr{
+    margin-bottom: 30px;
+}
+.objetivo .fila-objetivo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.objetivo .fila-objetivo .frase{
+    font-size: 18px;
+    font-weight: 600;
+}
+.objetivo .fila-objetivo h2{
+    font-size: 2.5rem;
+}
+.objetivo .fila-objetivo .col2 nav{
+    background-color: #18f305;
+    text-decoration: none;
+    border: none;
+    color: #fff;
+    padding: 15px 35px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+   
+}
+/*Seccion Tipos de Entrenamiento*/
+.servicios{
+    color: #fff;
+    position: relative;
+}
+.servicios .contenido-servicios{
+    background: linear-gradient(rgba(0,14,41,.6),rgba(0,7,78,.7)),url(img/fondo-servicios.jpg);
+    background-size: cover;
+    background-position: center center;
+    margin: auto;
+    padding: 0 20px;
+}
+.servicios .contenido-servicios .fila{
+    display: flex;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+    padding: 100px;
+}
+.servicios .contenido-servicios .fila .col{
+    width: 50%;
+}
+.servicios .contenido-servicios .fila .col img{
+    display: block;
+    width: 50%;
+    margin: auto;
+}
+.servicios .fila .col .contenedor-titulo{
+    display: flex;
+    align-items: center;
+}
+.servicios .fila .col .contenedor-titulo .numero{
+    color: #18f305;
+    font-weight: bold;
+    display: block;
+    font-size: 5rem;
+}
+.servicios .fila .col .contenedor-titulo .info{
+    margin-left: 30px;
+}
+.servicios .fila .col .contenedor-titulo .info .frase{
+    color: #18f305;
+}
+.servicios .fila .col .contenedor-titulo .info h2{
+    font-size: 3rem;
+}
+.servicios .fila .col p{
+   margin-bottom: 10px;
+   line-height: 28px;
+}
+.servicios .fila .col .p-especial{
+    font-weight: bold;
+}
+.servicios .info-servicios{
+    max-width: 800px;
+    margin: auto;
+}
+.servicios .info-servicios table{
+    text-align: center;
+    background: #fff;
+    color: #1f283e;
+    border-collapse: collapse;
+    position: relative;
+    bottom: 100px;
+}
+.servicios .info-servicios table td{
+    padding: 30px;
+    border: 1px solid #dde1e9;
+}
+.servicios .info-servicios table td i{
+    color: #18f305;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.servicios .info-servicios h3{
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.servicios .info-servicios p{
+    line-height: 30px;
+}
+/*Seccion Equipo*/
+.equipo{
+    max-width: 1100px;
+    margin: auto;
+    padding-top: 100px;
+    background-color: #dde1e9;
+}
+.equipo .contenedor-titulo{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin: auto;
+}
+.equipo .contenedor-titulo .numero{
+    color: #18f305;
+    font-weight: bold;
+    display: block;
+    font-size: 5rem;
+}
+.equipo .contenedor-titulo .info{
+    margin-left: 30px;
+}
+.equipo .contenedor-titulo .info .frase{
+    color: #18f305;
+}
+.equipo .contenedor-titulo .info h2{
+    font-size: 3rem;
+}
+.equipo .fila{
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-around;
+}
+.equipo .fila .col{
+    width: 25%;
+}
+.equipo .fila .col img{
+    max-height: 400px;
+    display: block;
+    margin: auto;
+}
+.equipo .fila .info{
+    border: 5px solid #1f283e;
+    text-align: center;
+    border-radius: 5px;
+    padding: 20px;
+    background: linear-gradient(#18f305, #138109);
+    color: #fff;
+}
+.equipo .fila .info p{
+    margin: 20px 0;
+    font-weight: bold;
+}
+.equipo .fila .info a{
+    color:#fff;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 20px;
+    font-size: 20px;
+}
+/* Seccion Alimentacion */
+.alimentacion{
+    color: #fff;
+    position: relative;
+}
+.alimentacion .contenido-alimentacion{
+    background: linear-gradient(rgba(0,14,41,.6),rgba(0,7,78,.7)),url(img/H1z5D5nKVg_1256x620.jpg);
+    background-size: cover;
+    background-position: center center;
+    margin: auto;
+    padding: 0 20px;
+}
+.alimentacion .contenido-alimentacion .fila{
+    display: flex;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+    padding: 100px;
+}
+.alimentacion .contenido-aliemnatcion .fila .col{
+    width: 50%;
+}
+.servicios .contenido-alimentacion .fila .col img{
+    display: block;
+    width: 50%;
+    margin: auto;
+}
+.alimentacion .fila .col .contenedor-titulo{
+    display: flex;
+    align-items: center;
+}
+.alimentacion .fila .col .contenedor-titulo .numero{
+    color: #18f305;
+    font-weight: bold;
+    display: block;
+    font-size: 5rem;
+}
+.alimentacion .fila .col .contenedor-titulo .info{
+    margin-left: 30px;
+}
+.alimentacion .fila .col .contenedor-titulo .info .frase{
+    color: #18f305;
+}
+.alimentacion .fila .col .contenedor-titulo .info h2{
+    font-size: 3rem;
+}
+.alimentacion .fila .col p{
+   margin-bottom: 10px;
+   line-height: 28px;
+}
+.alimentacion .fila .col .p-especial{
+    font-weight: bold;
+}
+.alimentacion .info-alimentacion{
+    max-width: 800px;
+    margin: auto;
+}
+.alimentacion .info-alimentacion table{
+    text-align: center;
+    background: #fff;
+    color: #1f283e;
+    border-collapse: collapse;
+    position: relative;
+    bottom: 100px;
+}
+.alimentacion .info-alimentacion table td{
+    padding: 30px;
+    border: 1px solid #dde1e9;
+}
+.alimentacion .info-alimentacion table td i{
+    color: #18f305;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.alimentacion .info-alimentacion h3{
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.alimentacion .info-alimentacion p{
+    line-height: 30px;
+}
+/* Seccion Contacto */
+.contacto{
+    color: #fff;
+    background:linear-gradient( rgba(0, 14, 41, 0.6), rgba(0, 7, 78, 0.7)),url(img/fondo.jpg);
+    background-size: cover;
+    background-position: center center;
+    padding: 100px 20px;
+
+}
+.contacto .contenido-seccion{
+    max-width: 800px;
+    margin: auto;
+}
+
+.contacto .contenedor-titulo{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin: auto;
+}
+.contacto  .contenedor-titulo .numero{
+    color: #18f305;
+    font-weight: bold;
+    display: block;
+    font-size: 5rem;
+}
+.contacto .contenedor-titulo .info{
+    margin-left: 30px;
+}
+.contacto .contenedor-titulo .info .frase{
+    color: #18f305;
+}
+.contacto .fila-datos{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    font-size: 18px;
+    text-align: center;
+}
+.contacto i{
+    color: #18f305;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* Footer */
+
+footer{
+    background-color: #151623;
+    padding: 30px 0;
+}
+footer .info{
+    display: flex;
+    max-width: 1100px;
+    margin: auto;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+footer .info p{
+    color: #797e8e;
+}
+footer .info a{
+    text-decoration: none;
+    color: #797e8e;
+    display: inline-block;
+    margin: 0 15px;
+}
