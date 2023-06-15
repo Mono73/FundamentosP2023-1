@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Buscador - JS  </title>
+    <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">  
+    <link rel="stylesheet" href="skeleton.css">
+    <link rel="stylesheet" href="app.css">
+   
+</head>
+<body>
+    <div class="card">
+        <h3>BUSCADOR DE RUTINAS</h3>
+        
+        <span class="top"></span>
+        <span class="right"></span>
+        <span class="bottom"></span>
+        <span class="left"></span>
+      </div>
+
+    <div class="contenedor">
+
+        
+
+        <form id="buscador">
+            <div class="row">
+                <div class="three columns">
+                    <label for="Objetivo">Objetivo</label>
+                    <select class="u-full-width" id="Objetivo">
+                        <option value="">Seleccione</option>
+                        <option value="Masa muscular">Masa muscular</option>
+                        <option value="Perder peso">Perder peso</option>
+                        <option value="Resistencia">Resistencia</option>
+                        <option value="Fuerza">Fuerza</option>
+                    </select>
+                </div>
+                <div class="three columns">
+                    <label for="Tiempo">Tiempo</label>
+                    <select class="u-full-width" id="Tiempo">
+                        <option value="">Seleccione</option>
+                        <option value="30min">30min</option>
+                        <option value="60min">60min</option>
+                        <option value="90min">90min</option>
+                    </select>
+                </div>
+                <div class="three columns">
+                    <label for="minimo">Ejercicios Min</label>
+                    <select class="u-full-width" id="minimo">
+                            <option value="">Seleccione</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="three columns">
+                    <label for="maximo">Ejercicios Max</label>
+                    <select class="u-full-width" id="maximo">
+                            <option value="">Seleccione</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <div class="four columns">
+                        <label for="Sett">Sett</label>
+                        <select class="u-full-width" id="Sett">
+                                <option value="">Seleccione</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                        </select>
+                    </div>
+                    <div class="four columns">
+                        <label for="Nivel">Nivel</label>
+                        <select class="u-full-width" id="Nivel">
+                                <option value="">Seleccione</option>
+                                <option value="Principiante">Principiante</option>
+                                <option value="Medio">Medio</option>
+                                <option value="Avanzado">Avanzado</option>
+                        </select>
+                    </div>
+                    <div class="four columns">
+                        <label for="Sexo">Sexo</label>
+                        <select class="u-full-width" id="Sexo">
+                                <option value="">Seleccione</option>
+                                <option value="Hombre">Hombre</option>
+                                <option value="Mujer">Mujer</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+
+        <h1>Resultados</h1>
+        <div id="resultado"></div>
+    </div>
+
+
+    <script src="db.js"></script>
+    <script src="app.js"></script>
+    
+</body>
+</html>
